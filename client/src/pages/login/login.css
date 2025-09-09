@@ -1,0 +1,16 @@
+.bg-button {
+  background: linear-gradient(
+    90deg,
+    rgba(92, 137, 224, 1) 0%,
+    rgba(41, 92, 192, 1) 100%
+  );
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 240px 0 240px 480px;
+  border-color: transparent transparent transparent #295bc046;
+}
+

@@ -1,0 +1,51 @@
+.user-table th {
+  font-weight: 400;
+  padding: 7px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-table {
+  opacity: 1;
+}
+
+.user-table > tbody > tr > td {
+  padding: 7px 20px;
+}
+
+@keyframes creationUserBgFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes creationUserFormAppear {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.creation-user-bg {
+  animation: creationUserBgFade 0.4s;
+}
+
+.creation-user-form-appear {
+  opacity: 0;
+  animation: creationUserFormAppear 0.1s 0.2s forwards ease-out;
+}
+
+.role-selection {
+  border-right: 16px solid transparent;
+}

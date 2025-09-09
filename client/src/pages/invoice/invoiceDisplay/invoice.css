@@ -1,0 +1,43 @@
+.invoice-table th {
+  font-weight: 400;
+  padding: 7px 30px;
+  font-size: 14px;
+}
+.invoice-table {
+  opacity: 1;
+}
+
+.invoice-table > tbody > tr > td {
+  padding: 7px 0;
+}
+
+.invoice-table > tbody > tr:nth-child(2n) {
+  padding: 7px 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+@keyframes appearAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bgAppearAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.bg-appear-animation {
+  animation: bgAppearAnimation 0.5s ease-out forwards;
+}
+
+.appear-animation {
+  animation: appearAnimation 0.5s ease-out forwards;
+}

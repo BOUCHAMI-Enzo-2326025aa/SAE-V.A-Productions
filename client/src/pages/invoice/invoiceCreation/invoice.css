@@ -1,0 +1,14 @@
+@keyframes pageAppear {
+  0% {
+    opacity: 0;
+    transform: translate(20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0);
+  }
+}
+
+.page-appear-animation {
+  animation: pageAppear 0.2s ease-in-out forwards;
+}

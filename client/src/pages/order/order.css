@@ -1,0 +1,12 @@
+.order-item-table th {
+  font-weight: 400;
+  opacity: 80%;
+  text-align: left;
+  font-size: 13px;
+  width: 20%;
+}
+
+.order-item-table td {
+  font-weight: 600;
+  font-size: 13px;
+}
