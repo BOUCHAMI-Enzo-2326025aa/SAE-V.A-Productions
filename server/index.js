@@ -8,7 +8,7 @@ import { router as invoiceRouter } from "./routes/invoiceRoute.js";
 import { router as contactRouter } from "./routes/contactRoute.js";
 import { router as orderRouter } from "./routes/orderRoute.js";
 import eventRoutes from "./routes/eventRoutes.js";
-import nodemailer from "nodemailer";
+//import nodemailer from "nodemailer";
 
 const app = express();
 
