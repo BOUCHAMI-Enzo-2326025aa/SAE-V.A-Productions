@@ -1,7 +1,7 @@
 import User from "../model/userModel.js";
 import bcrypt from "bcrypt";
 import jsonwebtoken from "jsonwebtoken";
-import { sendMail } from "../utils/sendMail.js";
+// import { sendMail } from "../utils/sendMail.js";
 import crypto from "crypto";
 
 const createToken = (user) => {
