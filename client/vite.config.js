@@ -10,4 +10,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    include: ["react-signature-canvas"], // pré-bundler pour Vercel
+  },
+  build: {
+    outDir: "dist", // s'assure que Vite génère dans dist
+  },
 });
