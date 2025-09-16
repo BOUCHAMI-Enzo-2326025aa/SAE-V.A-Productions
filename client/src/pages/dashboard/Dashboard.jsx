@@ -14,7 +14,7 @@ const Dashboard = () => {
       {!alreadyConnected && <WelcomeAnimation />}
       <div className="flex flex-col pt-3">
         <p className="font-inter text-[#3F3F3F] text-[40px] font-[700] max-[680px]:text-2xl">
-          Salut,
+          Bonjour,
         </p>
         <p className="font-inter text-[#3F3F3F] text-[20px] opacity-80 max-[680px]:text-sm">
           Bienvenue sur l'application de V.A Productions
