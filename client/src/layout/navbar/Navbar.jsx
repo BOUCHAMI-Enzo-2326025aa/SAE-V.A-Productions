@@ -80,8 +80,18 @@ const Navbar = ({ isOpen, closeNavbar }) => {
           link={"/guide"}
           text={"Guide d'utilisation"}
           icon={userGuideSvg}
-          className={"absolute px-2 bottom-5 w-full"}
+          className={"absolute px-2 bottom-16 w-full"}
         />
+
+        <button
+        onClick={() => {
+          localStorage.removeItem('user');
+          window.location.href = '/connexion';
+        }}
+        className="absolute left-0 bottom-5 w-[90%] mx-4 py-2 bg-red-600 text-white rounded-lg text-sm font-semibold hover:bg-red-700 transition"
+      >
+        Déconnexion
+      </button>
       </div>
     </div>
   );
