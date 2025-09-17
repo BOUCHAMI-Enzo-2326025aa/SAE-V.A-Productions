@@ -7,12 +7,13 @@ const Guide = () => {
   return (
     <div className="text-[#3F3F3F] mt-10 w-full flex flex-col gap-10">
       <a
-        href="https://publuu.com/flip-book/776602/1720455"
+        href="/guide.pdf"
+        download="Guide d'utilisation.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-500 text-white px-4 py-2 rounded w-fit"
       >
-        Lien PDF du Guide
+        Télécharger le Guide PDF
       </a>
       <div className="flex justify-between relative">
         <div className="w-[50%]">
