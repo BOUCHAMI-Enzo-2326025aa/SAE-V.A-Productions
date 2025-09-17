@@ -5,6 +5,7 @@ import "./login.css";
 import va_logo from "../../assets/va-production-logo.png";
 import loading_gif from "../../assets/loading-gif.svg";
 import ErrorMessage from "./ErrorMessage";
+import { Eye, EyeOff } from "lucide-react";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -12,6 +13,7 @@ const Login = () => {
   const [loginSuccessfull, setLoginSuccessfull] = useState(false);
   const [errorMessage, setErrorMessage] = useState();
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const loginUser = async () => {
     setErrorMessage();
@@ -67,14 +69,21 @@ const Login = () => {
             ></input>
           </label>
 
-          <label className="flex flex-col font-medium text-[15px]">
+          <label className="flex flex-col font-medium text-[15px] relative">
             Mot de passe
             <input
               required
               onChange={(e) => setPassword(e.target.value)}
-              type="password"
-              className="border-[#3F3F3F] border-[0.75px] border-opacity-15 max-w-[500px] py-[10px] rounded-[5px] px-2"
-            ></input>
+              type={showPassword ? "text" : "password"}
+              className="border-[#3F3F3F] border-[0.75px] border-opacity-15 max-w-[500px] py-[10px] rounded-[5px] px-2 pr-10"
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword((v) => !v)}
+              className="absolute right-2 top-[29px] text-xs text-[#5C89E0] hover:underline"
+            >
+              {showPassword ? <EyeOff size={30} /> : <Eye size={30} />}
+            </button>
           </label>
 
           {/* BUTTONS */}
