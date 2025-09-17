@@ -42,15 +42,17 @@ app.use(setCorsHeaders);
 
 app.use(express.json());
 
-app.listen(5555, () => {
-  console.log("App started");
-});
-
 app.use("/api/user", userRouter);
 app.use("/api/contact", contactRouter);
 app.use("/api", eventRoutes);
 app.use("/api/invoice", invoiceRouter);
 app.use("/api/order", orderRouter);
+
+
+app.listen(process.env.PORT, () => {
+  console.log(`App started on port ${process.env.PORT}`);
+});
+
 
 mongoose
   .connect(process.env.MONGODBURL)
